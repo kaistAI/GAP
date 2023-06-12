@@ -1,9 +1,9 @@
 {
     "wandb_project": "Gradient Ascent Open",
-    "wandb_run_name": "OPT-1.3B-CC_",
+    "wandb_run_name": "OPT-1.3B-Git_",
     "check_validation_only": false,
     "limit_val_samples": 320,
-    "train_set": "data/train_data/pile-cc.csv",
+    "train_set": "data/train_data/github.csv",
     "loss_fn": "negative",
     "valid_sets": [
         "piqa",
