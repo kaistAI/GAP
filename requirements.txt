@@ -1,0 +1,5 @@
+transformers
+pytorch-lightning
+pandas
+numpy
+wandb
