@@ -1,5 +1,5 @@
 # GAP
-[ACL 2023] Gradient Ascent Post-training Enhances Language Model Generalization
+[ACL 2023] [Gradient Ascent Post-training Enhances Language Model Generalization](https://arxiv.org/abs/2306.07052)
 
 Dongkeun Yoon*, Joel Jang*, Sungdong Kim, Minjoon Seo (* Equal Contribution)
 
