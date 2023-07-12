@@ -197,6 +197,7 @@ class Custom_Dataset(Dataset):
         targets = self.tokenizer(
             target_,
             max_length=self.output_length,
+            add_special_tokens=False,
             padding='max_length',
             truncation=True,
             return_tensors="pt")
