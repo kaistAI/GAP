@@ -27,5 +27,18 @@ The below runs resulted in substantial performance gains in dialogue generation 
     python run.py --config configs/final/cc-2.7.json --index 39 --num_train_epochs 7 --check_val_every_n_epoch 7
     ```
 
-### 3. Conduct your own analysis
+### 3. Check the qualitative results
+The generation results for GAP models are available at `qualitative.csv`. 
+
+`target`: The gold response.
+
+`opt-1.3b`: Baseline.
+
+`opt-1.3b-github_40`, `opt-1.3b-cc_61`: GAP models.
+
+Our models generate more interesting dialogue responses.
+
+
+
+### 4. Conduct your own analysis
 We provide the full evaluation results in `full_results/`. These results can be aligned with the training dataset files in `data/train_data/` using the `corpora` and `index` column. For example if `corpora == Git.` and `index == 0`, the evaluation result comes from a model trained on the 0th entry of `data/train_data/github.csv`.
