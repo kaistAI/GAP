@@ -28,15 +28,13 @@ The below runs resulted in substantial performance gains in dialogue generation 
     ```
 
 ### 3. Check the qualitative results
-The generation results for GAP models are available at `qualitative.csv`. 
+The generation results for some GAP models are available at `qualitative.csv`. 
 
 `target`: The gold response.
 
 `opt-1.3b`: Baseline.
 
 `opt-1.3b-github_40`, `opt-1.3b-cc_61`: GAP models.
-
-Our models generate more interesting dialogue responses.
 
 
 
