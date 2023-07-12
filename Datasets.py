@@ -174,7 +174,7 @@ class Custom_Dataset(Dataset):
                 input_ = self.create_dialogue_prompt(
                     example_batch['text'][:-1])
                 target_ = normalize_reply(example_batch['text'][-1])
-                task = self.dataset_name.split('.')[0].split('/')[1]
+                task = self.dataset_name.split('.')[0].split('/')[-1]
                 task_type = 'dialog'
             else:
                 input_, target_ = example_batch['text'], example_batch['text']
@@ -197,7 +197,6 @@ class Custom_Dataset(Dataset):
         targets = self.tokenizer(
             target_,
             max_length=self.output_length,
-            add_special_tokens=False,
             padding='max_length',
             truncation=True,
             return_tensors="pt")
